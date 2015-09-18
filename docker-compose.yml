@@ -14,9 +14,7 @@ candidate:
   ports:
     - "9881:8080"
   volumes:
-    - flavors/endpoint-candidate.flavor:/root/.rest_shifter/flavors/service_endpoint.flavor
-    - flavors/endpoint-meh-candidate.flavor:/root/.rest_shifter/flavors/service_endpoint_meh.flavor
-    - flavors/endpoint-foo-candidate.flavor:/root/.rest_shifter/flavors/service_endpoint_foo.flavor
+    - flavors/candidate/:/root/.rest_shifter/flavors/
   command: -s
 
 primary:
@@ -24,9 +22,7 @@ primary:
   ports:
     - "9882:8080"
   volumes:
-    - flavors/endpoint-primary.flavor:/root/.rest_shifter/flavors/service_endpoint.flavor
-    - flavors/endpoint-meh-primary.flavor:/root/.rest_shifter/flavors/service_endpoint_meh.flavor
-    - flavors/endpoint-foo-primary.flavor:/root/.rest_shifter/flavors/service_endpoint_foo.flavor
+    - flavors/primary/:/root/.rest_shifter/flavors/
   command: -s
 
 secondary:
@@ -34,7 +30,5 @@ secondary:
   ports:
     - "9883:8080"
   volumes:
-    - flavors/endpoint-secondary.flavor:/root/.rest_shifter/flavors/service_endpoint.flavor
-    - flavors/endpoint-meh-secondary.flavor:/root/.rest_shifter/flavors/service_endpoint_meh.flavor
-    - flavors/endpoint-foo-secondary.flavor:/root/.rest_shifter/flavors/service_endpoint_foo.flavor
+    - flavors/secondary/:/root/.rest_shifter/flavors/
   command: -s
