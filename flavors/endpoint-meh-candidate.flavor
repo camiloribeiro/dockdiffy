@@ -1,0 +1,10 @@
+## ! ~/.rest_shifter/flavors/hello_world.flavor
+method_used                 = "get"
+path                        = "/endpoint/meh"
+request_accept              = ""
+request_content_type        = ""
+response_sleep              = 0
+response_status             = "402"
+response_body               = { "hello_meh" : "candidate" }
+response_content_type       = "application/xml"
+response_location           = ""
