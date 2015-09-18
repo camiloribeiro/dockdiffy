@@ -32,6 +32,15 @@ ps: If you are running on mac or windows, remember to use the docker-machine/boo
 
 Have fun!
 
+Digging a bit more
+------------
+
+there are some other resources running in the same containers. You can play with it with the following curls:
+
+      $ curl --header "Canonical-Resource: /endpoint" http://localhost:31900/endpoint
+      $ curl --header "Canonical-Resource: /endpoint/foo" http://localhost:31900/endpoint/foo
+      $ curl --header "Canonical-Resource: /endpoint/meh" http://localhst:31900/endpoint/meh
+
 Applying to your own service
 --------------
 
