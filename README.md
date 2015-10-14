@@ -1,6 +1,10 @@
 Dockdiffy
 ==========
 
+This repository was merged to the official twitter diffy repo:
+
+      https://github.com/twitter/diffy/tree/master/example
+
 Example of how to use twitter diffy (https://github.com/twitter/diffy) running on docker containers
 
 Running
